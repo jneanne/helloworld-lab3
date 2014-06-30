@@ -1,8 +1,12 @@
-all: helloworld
+PROGS:=helloworld goodbyeworld
+
+all: $(PROGS)
 
 clean:
-	rm -f helloworld
+	rm -f $(PROGS)
 
 helloworld: helloworld.c
 	$(CC) -o $@ $^
 
+goodbyeworld: goodbyeworld.c
+	$(CC) -o $@ $^
