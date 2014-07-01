@@ -9,6 +9,7 @@ unsigned long long fact (unsigned int n)
 		return(x);
 	}
 	else {
+		/* recursive call */
 		x = n * fact(n - 1);
 		return x;
 	}
@@ -18,9 +19,13 @@ int main(void)
 {
 	unsigned long long res;
 	unsigned int n;
+	
+	/* Ask user to input a number */
 	printf ("Insert a number\n");
 	scanf ("%d", &n);
 	res = fact(n);
+	
+	/* Print result! */
 	printf ("fact(%d) = %llu\n", n, res);
 	return 0;
 }
