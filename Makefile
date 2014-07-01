@@ -1,4 +1,4 @@
-PROGS:=helloworld goodbyeworld
+PROGS:=helloworld goodbyeworld rand
 
 all: $(PROGS)
 
@@ -9,4 +9,7 @@ helloworld: helloworld.c
 	$(CC) -o $@ $^
 
 goodbyeworld: goodbyeworld.c
+	$(CC) -o $@ $^
+
+rand: rand.c
 	$(CC) -o $@ $^
