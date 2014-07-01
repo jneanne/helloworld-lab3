@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-long long fact (int n)
+unsigned long long fact (unsigned int n)
 {
-	long long x = 0;
+	unsigned long long x = 0;
 	if (n == 1) {
 		x = 1;
 		return(x);
@@ -16,8 +16,8 @@ long long fact (int n)
 
 int main(void)
 {
-	long long res;
-	int n;
+	unsigned long long res;
+	unsigned int n;
 	printf ("Insert a number\n");
 	scanf ("%d", &n);
 	res = fact(n);
